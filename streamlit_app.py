@@ -8,4 +8,4 @@ streamlit.text('🐔Kale, Spinach & Rocket Smothie')
 streamlit.text('🥣 Hard-Boiled Free-Range Egg')
 streamlit.text('🥑🍞Avocado Toast')
 
-  
+  # https://firstappapp-ymce4dyf6hir7pa2zz9ikb.streamlit.app/
