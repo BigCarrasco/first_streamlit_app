@@ -27,7 +27,8 @@ streamlit.dataframe(fruits_to_show)
 
 ####### lesson 9 #######
 streamlit.header('Fuit advice header')
-
+fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+streamlit.write('The user entered ', fruit_choice)
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 
 #se comentaron las linea que tenia la respuesta en crudo y sin normalizar
