@@ -28,11 +28,11 @@ streamlit.dataframe(fruits_to_show)
 ####### lesson 9 #######
 streamlit.header('Fuit advice header')
 
-# se comento la linea que tenia la respuesta en crudo y sin normalizar
-###fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 
-#streamlit.text(fruityvice_response) 
-streamlit.text(fruityvice_response.json()) #just write the data on screen
+#se comentaron las linea que tenia la respuesta en crudo y sin normalizar
+###streamlit.text(fruityvice_response) 
+###streamlit.text(fruityvice_response.json()) #just write the data on screen
 
 #creacion de la variable para la normalizacion de la vista del json con pandas
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
