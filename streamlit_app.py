@@ -25,8 +25,12 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 #display the data in the page
 streamlit.dataframe(fruits_to_show)
 
+####### lesson 9 #######
 streamlit.header('Fuit advice header')
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+
+# se comento la linea que tenia la respuesta en crudo y sin normalizar
+###fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+
 #streamlit.text(fruityvice_response) 
 streamlit.text(fruityvice_response.json()) #just write the data on screen
 
