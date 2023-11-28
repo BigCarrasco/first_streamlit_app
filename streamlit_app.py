@@ -30,9 +30,11 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"
 #streamlit.text(fruityvice_response) 
 streamlit.text(fruityvice_response.json()) #just write the data on screen
 
-#normalizacion de la vista del json con pandas
+#creacion de la variable para la normalizacion de la vista del json con pandas
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 
+#exposicion por streamlit la variable normalizada
+streamlit.dataframe(fruityvice_normalized)
 
 
 
