@@ -47,7 +47,7 @@ my_cur = my_cnx.cursor()
 my_cur.execute("SELECT * from fruit_load_list")
 my_data_row = my_cur.fetchall()
 streamlit.header("The fruit list contains")
-streamlit.dataframe(my_data_row)
+streamlit.dataframe(my_data_rows)
 
   # https://firstappapp-ymce4dyf6hir7pa2zz9ikb.streamlit.app/
  
