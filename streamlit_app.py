@@ -1,5 +1,6 @@
 import streamlit
 import pandas, requests, snowflake.connector
+import urllib.error import URLError
 
 streamlit.title('My parents New Healthy diner')
 streamlit.header('Breakfast Favorites Menu')
@@ -40,6 +41,8 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 
 #exposicion por streamlit la variable normalizada
 streamlit.dataframe(fruityvice_normalized)
+
+streamlit.stop()
 
 #segundo data frame con conexion a snowflake
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
